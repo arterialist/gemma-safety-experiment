@@ -1,0 +1,23 @@
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Locally generated model checkpoints and activation caches
+artifacts/
+*.safetensors
+*.pt
+*.bin
+
+# Python packaging and bytecode caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# OS artifacts
+.DS_Store
+Thumbs.db

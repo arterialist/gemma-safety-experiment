@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gemma-safety-experiment"
+version = "1.0.0"
+description = "Mechanistic Interpretability, Post-Norm Weight Surgery, Latent Harm Guards, and Trigger-Blind Sleeper Agent Detection in Gemma 3"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+authors = [
+    {name = "Andrew", email = "qazedcwsxrfv228@gmail.com"},
+]
+dependencies = [
+    "torch",
+    "transformers",
+    "accelerate",
+    "safetensors",
+    "huggingface_hub",
+    "datasets",
+    "peft",
+    "scikit-learn",
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "seaborn",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/arterialist/gemma-safety-experiment"
+Repository = "https://github.com/arterialist/gemma-safety-experiment"
+Issues = "https://github.com/arterialist/gemma-safety-experiment/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
